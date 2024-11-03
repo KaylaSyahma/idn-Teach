@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Epilogue", sans-serif;
+    overflow-x: hidden;
+}
+
+
+:root {
+    --primary-color: #2D2D2D;
+    --desc-size: 26px;
+}
+
+section {
+    padding: 5rem 9%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*agar lebar memenuhi viewport*/
+    padding: 2rem 6%;
+    /*2 rem itu jarak si tulisan portfolio ke atas page, 9% diambil dri seluruh kelebaran viewport yg 100%*/
+    background: var(--background-color);
+    display: flex;
+    /*flex biar semuanya sebaris*/
+    justify-content: space-between;
+    /*ngasih space karena portfolio dn home dll beda tag*/
+    align-items: center;
+    /* z-index: 100; z-index itu kayak buat layer, semakin gede angkanya, dia bakal makin ke depan. misalkan ada z index:1 sm z-index:3, z-index:1 nya bakal ketiban sm z-index:3 */
+}
+
+.logo {
+    font-size: 31px;
+    color: var(--second-text-color);
+    font-weight: 600;
+    cursor: default;
+    /*klo pointer, dia bakal bentuk tangan pas kursornya dikenain*/
+}
+
+.navbar a {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-right: 30px;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kiri{
+    margin-top: 20px;
+}
+
+.role{
+    color: var(--primary-color);
+    font-size: 30.4px;
+font-weight: 600;
+margin-bottom: 40px;
+}
+
+h1{
+    color: var(--primary-color);
+font-size: 103px;
+font-weight: 600;
+margin-bottom: 40px;
+}
+
+.desc{
+    color: var(--primary-color);
+font-size: var(--desc-size);
+font-weight: 400;
+margin-bottom: 59px;
+width: 898px;
+}
+
+button{
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 27px;
+    padding: 30px 78px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand{
+    width: 100vw;
+}
+
+h2{
+    color: var(--primary-color);
+text-align: center;
+font-size: 52.08px;
+font-weight: 600;
+margin-bottom: 70px;
+}
+
+.project-card img{
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.project-card h4{
+    margin-bottom: 16px;
+    color: var(--primary-color);
+font-size: 30.01px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
